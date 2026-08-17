@@ -11,13 +11,13 @@ LipiLens is a computer vision project for recognition of Modi/Lipi characters.
 
 ## 1. Clone the repository
 
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/ckhot18/lipilens/
 
 cd LipiLens
 
 ## 2. Create virtual environment
 
-py -3.11 -m venv .venv
+py  -m venv .venv
 
 ## 3. Activate environment
 
