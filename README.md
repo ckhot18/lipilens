@@ -9,6 +9,10 @@ LipiLens is a computer vision project for recognition of Modi/Lipi characters.
 - NVIDIA GPU recommended
 - Git
 
+## Links for datasets :
+
+- https://www.kaggle.com/datasets/msanshikajain/modi-lipi-matra-dastaset
+
 ## 1. Clone the repository
 
 git clone https://github.com/ckhot18/lipilens/
@@ -17,7 +21,7 @@ cd LipiLens
 
 ## 2. Create virtual environment
 
-py  -m venv .venv
+py -m venv .venv
 
 ## 3. Activate environment
 
