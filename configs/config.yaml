@@ -1,0 +1,24 @@
+data:
+  train_csv: data/splits/train.csv
+  val_csv: data/splits/val.csv
+  vocab: data/vocab.json
+  image_height: 32
+
+model:
+  architecture: crnn
+  cnn_channels: [64, 128, 256, 512]
+  lstm_hidden_size: 256
+  lstm_layers: 2
+
+training:
+  epochs: 30
+  batch_size: 8
+  learning_rate: 0.001
+  patience: 5
+  gradient_clip_norm: 5.0
+  mixed_precision: true
+
+paths:
+  checkpoints: checkpoints
+  logs: logs
+  reports: reports

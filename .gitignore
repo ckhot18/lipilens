@@ -1,0 +1,113 @@
+# ─────────────────────────────────────────────
+# LipiLens .gitignore
+# ─────────────────────────────────────────────
+
+# ── Python ───────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+pip-wheel-metadata/
+MANIFEST
+
+# ── Virtual environments ──────────────────────
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# ── Environment / secrets ─────────────────────
+.env
+.env.*
+*.env
+*.key
+*.secret
+secrets.yaml
+secrets.json
+
+# ── PyTorch checkpoints ───────────────────────
+# Keep the checkpoints/ directory but ignore weight files.
+# Remove the lines below if you want to commit trained weights.
+checkpoints/*.pt
+checkpoints/*.pth
+checkpoints/*.ckpt
+
+# ── Dataset — synthetic images ────────────────
+# 7,120 PNGs (~304 MB) — regenerate locally with generate_dataset.py
+data/synthetic/images/
+data/synthetic/sample_images/
+data/synthetic/sample_images_60.zip
+
+# ── Dataset — real scans (research-use only, no redistribution) ──
+data/real/raw_scans/*
+data/real/annotated_test/*
+!data/real/raw_scans/.gitkeep
+!data/real/annotated_test/.gitkeep
+
+# ── Jupyter / notebooks ───────────────────────
+notebooks/.ipynb_checkpoints/
+.ipynb_checkpoints/
+*.ipynb
+
+# ── IDE and editor configs ────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── OS artifacts ─────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# ── Logs and reports ──────────────────────────
+# Keep the files that are committed; ignore generated outputs.
+logs/training_log.csv
+reports/loss_curves.png
+reports/cer_histogram.png
+reports/qualitative_grid.png
+reports/synthetic_val_predictions.csv
+# Keep metrics.md and STATUS.md — they are manually maintained.
+
+# ── Webapp runtime outputs ────────────────────
+results/webapp/
+
+# ── Build / packaging ─────────────────────────
+*.spec
+*.manifest
+
+# ── Coverage and testing ──────────────────────
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+*.log
+
+# ── Type checking ─────────────────────────────
+.mypy_cache/
+.pyright/
+.ruff_cache/
+
+# ── Misc ──────────────────────────────────────
+*.bak
+*.tmp
+*.orig
+*.rej
+.cache/
+tmp/
+temp/

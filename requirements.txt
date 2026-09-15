@@ -1,0 +1,6 @@
+pillow==10.4.0
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
+fonttools==4.53.1
+# torch/torchvision are installed separately (see README/instructions) so you
+# get the correct CUDA build for your GPU instead of a CPU-only wheel.
